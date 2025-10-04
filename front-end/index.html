@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Грим та Грім - Український рок гурт</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>G&G</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">Про гурт</a></li>
+                <li><a href="#concerts" class="nav-link">Концерти</a></li>
+                <li><a href="#gallery" class="nav-link">Галерея</a></li>
+                <li><a href="#contacts" class="nav-link">Контакти</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Гурт «Грим та Грім»</h1>
+            <p class="hero-subtitle">Справжній український рок, який торкнеться серця</p>
+            <p class="hero-description">
+                «Грим та Грім» — це поєднання потужних гітарних рифів, чесних текстів і мелодійної енергії сцени. 
+                Ми граємо для тих, хто цінує живий звук, свободу та силу музики!
+            </p>
+            <p class="hero-description">
+                Наші концерти — це завжди контакт із залом, драйв і енергія. Приєднуйся до нас на найближчих виступах і відчуй справжній рок на власній шкірі!
+            </p>
+            <button class="btn btn-primary" id="orderTicketBtn">ЗАМОВИТИ КВИТОК</button>
+        </div>
+    </section>
+
+    <!-- Concerts Section -->
+    <section class="concerts" id="concerts">
+        <div class="container">
+            <h2 class="section-title">Найближчі концерти</h2>
+            <div class="concerts-table">
+                <div class="table-header">
+                    <div class="col-venue">Місце / Заклад</div>
+                    <div class="col-seats">К-ть місць</div>
+                    <div class="col-date">Дата і час</div>
+                    <div class="col-action"></div>
+                </div>
+                <div class="table-row">
+                    <div class="col-venue">Київ — Docker G-Pub</div>
+                    <div class="col-seats">250</div>
+                    <div class="col-date">25.10.2025, 19:00</div>
+                    <div class="col-action">
+                        <button class="btn btn-secondary concert-btn" data-venue="Docker G-Pub" data-date="25.10.2025">Замовити квиток</button>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="col-venue">Львів — FESTrepublic</div>
+                    <div class="col-seats">400</div>
+                    <div class="col-date">01.11.2025, 20:00</div>
+                    <div class="col-action">
+                        <button class="btn btn-secondary concert-btn" data-venue="FESTrepublic" data-date="01.11.2025">Замовити квиток</button>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="col-venue">Одеса — Зелен театр</div>
+                    <div class="col-seats">700</div>
+                    <div class="col-date">09.11.2025, 19:30</div>
+                    <div class="col-action">
+                        <button class="btn btn-secondary concert-btn" data-venue="Зелен театр" data-date="09.11.2025">Замовити квиток</button>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="col-venue">Харків — ArtZavod</div>
+                    <div class="col-seats">500</div>
+                    <div class="col-date">16.11.2025, 19:00</div>
+                    <div class="col-action">
+                        <button class="btn btn-secondary concert-btn" data-venue="ArtZavod" data-date="16.11.2025">Замовити квиток</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Band Members Section -->
+    <section class="members" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Учасники гурту</h2>
+            <div class="members-grid">
+                <div class="member-card">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop&crop=face" alt="Максим - Гітара" loading="lazy">
+                    </div>
+                    <h3 class="member-name">Максим — Гітара</h3>
+                </div>
+                <div class="member-card">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Олена - вокал" loading="lazy">
+                    </div>
+                    <h3 class="member-name">Олена — вокал</h3>
+                </div>
+                <div class="member-card">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face" alt="Тарас - барабани" loading="lazy">
+                    </div>
+                    <h3 class="member-name">Тарас — барабани</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story" id="about">
+        <div class="story-overlay"></div>
+        <div class="container">
+            <h2 class="section-title">Наша історія</h2>
+            <div class="story-content">
+                <div class="story-text">
+                    <p>
+                        «Грим та Грім» народився з бажання створювати музику, яка відкуваються серцем. Ми почали 
+                        свій шлях у маленькій студії в центрі Києва, де кожен акорд, кожна слова була написана 
+                        особисто та переживанням. Ці були часи, де музика була не просто хобі, а справжньою 
+                        пристрастю та одним із способів самовираження.
+                    </p>
+                    <p>
+                        За роки нашої діяльності ми виступили на десятках сцен, від невеликих клубів до великих 
+                        фестивалів. Наша музика — це поєднання традиційного року з сучасними елементами, що 
+                        робить її унікальною та впізнаваною. Ми не боїмося експериментувати та звучати, додаючи 
+                        елементи етнічної української музики.
+                    </p>
+                    <p>
+                        Кожен наш виступ — це не просто концерт, а справжня подія, де ми ділимося своєю енергією з глядачами та створюємо неповторну атмосферу. Ми 
+                        віримо, що музика має силу об'єднувати людей, створювати спільноти та надихати на зміни.
+                    </p>
+                    <p>
+                        Наш колектив складається з досвідчених музикантів, кожен з яких привносить свій унікальний стиль та бачення. Максим створює найкращі гітарні 
+                        рифи, Олена зачаровує своїм вокалом, а Тарас тримає ритм, який змушує серця битися в унісон з музикою.
+                    </p>
+                </div>
+                <div class="story-image">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop" alt="Концерт гурту" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Зв'яжіться з нами</h2>
+            <p class="contact-subtitle">Хочеш замовити виступ або маєш питання? Пиши!</p>
+            
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ім'я</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Повідомлення</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Розкажи про свій захід (дата, час, місце)..." required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Відправити</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Наше місцезнаходження</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636628168243!2d30.5234!3d50.4501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2sKyiv%2C%20Ukraine!5e0!3m2!1sen!2sus!4v1234567890"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 «Грим та Грім». Всі права захищені.</p>
+                    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d7b5b8b8bcbeb9b097b0a5bebab0a5bebaf9a2b6">[email&#160;protected]</a> | +38 (099) 123-45-67</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#" class="social-link" id="instagramLink">Instagram</a>
+                        <a href="#" class="social-link" id="youtubeLink">YouTube</a>
+                        <a href="#" class="social-link" id="facebookLink">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="ticketModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3>Замовлення квитка</h3>
+            <p id="modalVenueInfo"></p>
+            <form class="ticket-form" id="ticketForm">
+                <div class="form-group">
+                    <label for="ticketName">Ім'я</label>
+                    <input type="text" id="ticketName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="ticketEmail">Email</label>
+                    <input type="email" id="ticketEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="ticketQuantity">Кількість квитків</label>
+                    <select id="ticketQuantity" name="quantity" required>
+                        <option value="1">1 квиток</option>
+                        <option value="2">2 квитки</option>
+                        <option value="3">3 квитки</option>
+                        <option value="4">4 квитки</option>
+                        <option value="5">5+ квитків</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Замовити</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3>Дякуємо!</h3>
+            <p id="successMessage">Ваше повідомлення успішно відправлено. Ми зв'яжемося з вами найближчим часом!</p>
+            <button class="btn btn-primary" onclick="closeModal('successModal')">OK</button>
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
